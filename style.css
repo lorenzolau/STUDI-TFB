@@ -1,0 +1,11 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bi-person-fill{
+  width: 2em;
+  height: 2em;
+}
+
+.header {
+  height: 70px;
+}
