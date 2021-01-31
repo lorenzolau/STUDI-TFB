@@ -1,11 +1,132 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow Bold', sans-serif;
 }
-.bi-person-fill{
-  width: 2em;
-  height: 2em;
+.navbar{
+  text-transform: uppercase;
+}
+#presentation{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 80px auto 0;
+}
+.presentation{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.presentation p{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:darkblue;
+  color:ghostwhite;
+}
+.card-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.barre{
+  width: 200px;
+  height: 2px;
+  background-color: rgb(23, 22, 85);
+  margin: 10px auto;
+}
+.card{
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  background-clip: unset;
+  border: unset;
+
+}
+.row{
+  margin: 10px;
+
+}
+.wrapper{
+  margin: 10px;
+}
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
-.header {
-  height: 70px;
+.text-element {
+  padding: 10px 0;
+}
+
+.menu {
+  display: none;
+}
+
+li {
+  width: 90%;
+}
+.ambiance{
+  color: #f80;
+  font-weight: bold;
+
+}
+@media screen and (max-width: 1023px) {
+  ul {
+    list-style-type: none; 
+  }
+
+  .text-element {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+  }
+}
+
+@media screen and (max-width: 741px) {
+  .list {
+    list-style-type: none; 
+    margin: 15px 0;
+  }
+  .card-group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .menu {
+    display: flex;
+  }
+
+  .text-element {
+    display: none;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  .title {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner{
+    display: none;
+  }
 }
