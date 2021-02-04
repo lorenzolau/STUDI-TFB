@@ -143,7 +143,9 @@ li {
   .event h1{
     font-size: 18px;
   }
-
+table, thead, tbody, th, td, tr { 
+  display: block; 
+}
 }
 .event{
   margin-top: 60px;
